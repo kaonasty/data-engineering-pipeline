@@ -2,7 +2,7 @@
 
 A comprehensive real-time data engineering pipeline that ingests, processes, and stores user data using modern technologies.
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph LR
@@ -20,7 +20,7 @@ graph LR
     end
 ```
 
-## 🚀 Tech Stack
+## Tech Stack
 
 -   **Source**: Random User API (Python Producer)
 -   **Message Broker**: Apache Kafka (Confluent)
@@ -29,12 +29,12 @@ graph LR
 -   **Orchestration**: Apache Airflow
 -   **Containerization**: Docker & Docker Compose
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 -   Docker Desktop (with 8GB+ RAM recommended)
 -   Python 3.9+ (for local development)
 
-## 🏁 Getting Started
+## Getting Started
 
 ### 1. Start Services
 Run the following command to build and start all containers:
@@ -64,13 +64,13 @@ docker compose exec spark-master spark-submit \
   /opt/bitnami/spark/spark_stream.py
 ```
 
-## 📊 Monitoring
+## Monitoring
 
 -   **Airflow UI**: [http://localhost:8082](http://localhost:8082) (User/Pass: `admin`/`admin`)
 -   **Kafka UI**: [http://localhost:8080](http://localhost:8080)
 -   **Spark Master**: [http://localhost:8081](http://localhost:8081)
 
-## 🧪 Verification
+## Verification
 
  Check if data is landing in Cassandra:
 
